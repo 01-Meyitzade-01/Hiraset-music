@@ -13,7 +13,7 @@ async def addchannel(client, message):
         invitelink = await client.export_chat_invite_link(chid)
     except:
         await message.reply_text(
-            "<b>Önce Anonim Gönder seçeneği dışında tüm izinler beni Grubunun yöneticisi olarak ekle ve kontrol etmelisin /help</b>",
+            "<b>Önce Anonim Gönder seçeneği dışında tüm izinler için beni Grubunun yöneticisi olarak ekle</b>",
         )
         return
 
