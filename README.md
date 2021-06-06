@@ -1,6 +1,6 @@
 <h2 align="centre">Telegram Grup Müzik Çalar Botu🎵</h2>
 
-### Telegram grubunun sesli aramasinde müzik çalabilen bir bot
+### Telegram grubunun sesli aramasinde müzik çalabilen bir bot Sorunlar en aza indirildi. 
 
 <p align="center">
 <img src="https://i.ibb.co/syVTfWb/6d58817f09e15d326fa1807f2a57587c.jpg" alt="6d58817f09e15d326fa1807f2a57587c" border="0"> 
