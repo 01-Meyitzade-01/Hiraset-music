@@ -9,7 +9,7 @@ from helpers.filters import other_filters2
 async def start(_, message: Message):
     await message.reply_text(
         f"""**Merhaba, Ben {bn} 🎵
-Göründügü gibi müzik uygulaması yapıyoruz sizler için en iyisini tasarlandım. Ben [Mehmet Bey](https://t.me/EfsaneStar).
+Göründügü gibi müzik uygulaması yapıyoruz sizler için en iyisini tasarladık. Ben [Mehmet Bey](https://t.me/EfsaneStar).
 Ve bu uygulamada emeği geçen arkadaşım [RGMehmet](https://t.me/mehmett_12) Kendisine teşekkürler ederim.👍
 Bu uygulamayı grubunuza ekleyin ve özgürce müzik çalın!**
         """,
