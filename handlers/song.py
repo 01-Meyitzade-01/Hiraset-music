@@ -12,8 +12,8 @@ def time_to_seconds(time):
     return sum(int(x) * 60 ** i for i, x in enumerate(reversed(stringt.split(':'))))
 
 
-@Client.on_message(filters.command('song') & ~filters.private & ~filters.channel)
-def song(client, message):
+@Client.on_message(filters.command('ytindir') & ~filters.private & ~filters.channel)
+def ytindir(client, message):
 
     user_id = message.from_user.id 
     user_name = message.from_user.first_name 
@@ -23,7 +23,7 @@ def song(client, message):
     for i in message.command[1:]:
         query += ' ' + str(i)
     print(query)
-    m = message.reply('🔎 Şarkıyı buluyorum ...')
+    m = message.reply('🔎 Şarkıyı sizin için arıyorum...')
     ydl_opts = {"format": "bestaudio[ext=m4a]"}
     try:
         results = YoutubeSearch(query, max_results=1).to_dict()
@@ -46,13 +46,13 @@ def song(client, message):
         )
         print(str(e))
         return
-    m.edit("şarkıyı youtubeden indirme...")
+    m.edit("Youtube üzerinden indirme yapıldı...")
     try:
         with youtube_dl.YoutubeDL(ydl_opts) as ydl:
             info_dict = ydl.extract_info(link, download=False)
             audio_file = ydl.prepare_filename(info_dict)
             ydl.process_info(info_dict)
-        rep = '**🎵 Yükleyen by @Mehmett_12**'
+        rep = '**🎵 YouTube üzerinden yüklendi**'
         secmul, dur, dur_arr = 1, 0, duration.split(':')
         for i in range(len(dur_arr)-1, -1, -1):
             dur += (int(dur_arr[i]) * secmul)
@@ -60,7 +60,7 @@ def song(client, message):
         message.reply_audio(audio_file, caption=rep, thumb=thumb_name, parse_mode='md', title=title, duration=dur)
         m.delete()
     except Exception as e:
-        m.edit('❌ Error')
+        m.edit('❌ Hata')
         print(e)
 
     try:
