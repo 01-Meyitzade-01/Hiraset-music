@@ -10,19 +10,20 @@ async def start(_, message: Message):
     await message.reply_text(
         f"""**Merhaba, Ben {bn} 🎵
 Göründügü gibi müzik uygulaması yapıyoruz sizler için en iyisini tasarlandım. Ben [Mehmet Bey](https://t.me/EfsaneStar).
+Ve bu uygulamada emeği geçen arkadaşım [RgMehmet](Mehmett_12) Kendisine teşekkürler ederim. 
 Bu uygulamayı grubunuza ekleyin ve özgürce müzik çalın!**
         """,
         reply_markup=InlineKeyboardMarkup(
             [
                 [
                     InlineKeyboardButton(
-                        " Katkıda bulunan 👨‍💻", url="https://t.me/Efsanestar")
+                        " Katkıda bulunan 👨‍💻", url="https://t.me/Mehmett_12")
                   ],[
                     InlineKeyboardButton(
-                        " Sohbet Group 💬", url="https://t.me/RgSohbet"
+                        " Sohbet Group 💬", url="https://t.me/sohbetskyfall"
                     ),
                     InlineKeyboardButton(
-                        " Uygulama sahibi 👨‍💻", url="https://t.me/Mehmett_12"
+                        " Uygulama sahibi 👨‍💻", url="https://t.me/EfsaneStar"
                     )
                 ],[ 
                     InlineKeyboardButton(
@@ -40,7 +41,7 @@ async def gstart(_, message: Message):
             [
                 [
                     InlineKeyboardButton(
-                        "🔊 Channel", url="https://t.me/RgChannell")
+                        "🔊 Channel", url="https://t.me/sohbetlobisi")
                 ]
             ]
         )
