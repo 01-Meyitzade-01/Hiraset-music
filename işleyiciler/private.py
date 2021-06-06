@@ -10,7 +10,7 @@ async def start(_, message: Message):
     await message.reply_text(
         f"""**Merhaba, Ben {bn} 🎵
 Göründügü gibi müzik uygulaması yapıyoruz sizler için en iyisini tasarlandım. Ben [Mehmet Bey](https://t.me/EfsaneStar).
-Ve bu uygulamada emeği geçen arkadaşım [RGMehmet](https://t.me/mehmett_12) Kendisine teşekkürler ederim. 
+Ve bu uygulamada emeği geçen arkadaşım [RGMehmet](https://t.me/mehmett_12) Kendisine teşekkürler ederim.👍
 Bu uygulamayı grubunuza ekleyin ve özgürce müzik çalın!**
         """,
         reply_markup=InlineKeyboardMarkup(
