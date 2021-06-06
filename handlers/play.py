@@ -95,11 +95,11 @@ async def generate_cover(requested_by, title, views, duration, thumbnail):
 
 
 
-@Client.on_message(command("play") & other_filters)
+@Client.on_message(command("oynat") & other_filters)
 @errors
-async def play(_, message: Message):
+async def oynat(_, message: Message):
 
-    lel = await message.reply("🔄 **Şimdi** Buluyorum...")
+    lel = await message.reply("🔄 **Lütfen** Bekleyiniz...")
     sender_id = message.from_user.id
     sender_name = message.from_user.first_name
 
@@ -120,7 +120,7 @@ async def play(_, message: Message):
     if audio:
         if round(audio.duration / 60) > DURATION_LIMIT:
             raise DurationLimitError(
-                f"❌ Videos longer than {DURATION_LIMIT} minute(s) aren't allowed to play!"
+                f"❌ Daha uzun videolar {DURATION_LIMIT} dakika(s) oynamasına izin verilmiyor!"
             )
 
         file_name = get_file_name(audio)
@@ -187,7 +187,7 @@ async def play(_, message: Message):
         await generate_cover(requested_by, title, views, duration, thumbnail)     
         file_path = await converter.convert(youtube.download(url))
     else:
-        await lel.edit("🔎 **Şimdi** Arıyorum ve Buluyorum...")
+        await lel.edit("🔎 **Şimdi** Arıyorum ve hazırlıyorum...")
         sender_id = message.from_user.id
         user_id = message.from_user.id
         sender_name = message.from_user.first_name
@@ -198,7 +198,7 @@ async def play(_, message: Message):
         for i in message.command[1:]:
             query += ' ' + str(i)
         print(query)
-        await lel.edit("🎵 **Şimdi** Buluyorum...")
+        await lel.edit("🎵 **Lütfen** Bekleyiniz...")
         ydl_opts = {"format": "bestaudio[ext=m4a]"}
         try:
             results = YoutubeSearch(query, max_results=1).to_dict()
@@ -247,7 +247,7 @@ async def play(_, message: Message):
         await message.reply_photo(
         photo="final.png",
         reply_markup=keyboard,
-        caption="▶️ **Oynatılıyor** burada istenen şarkı {} YouTube üzerinden çalmakta 🎵".format(
+        caption="▶️ **Şuan Oynatılıyor** burada istenen şarkı {} YouTube üzerinden çalmakta 🎵".format(
         message.from_user.mention()
         ),
     )
