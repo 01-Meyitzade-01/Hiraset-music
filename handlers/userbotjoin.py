@@ -4,7 +4,7 @@ from pyrogram.types import Message, InlineKeyboardButton, InlineKeyboardMarkup
 from pyrogram.errors import UserAlreadyParticipant
 from helpers.decorators import errors, authorized_users_only
 
-@Client.on_message(filters.group & filters.command(["userbotkatil"]))
+@Client.on_message(filters.group & filters.command(["katil"]))
 @authorized_users_only
 @errors
 async def addchannel(client, message):
@@ -20,7 +20,7 @@ async def addchannel(client, message):
     try:
         user = await USER.get_me()
     except:
-        user.first_name =  "SesMusicAsistan" 
+        user.first_name =  "SesmusicAsistan" 
 
     try:
         await USER.join_chat(invitelink)
@@ -34,21 +34,21 @@ async def addchannel(client, message):
         print(e)
         await message.reply_text(
             f"<b>🛑 Taşan Bekleme Hatası 🛑 \n kullanıcı {user.first_name} userbot için yoğun katılım istekleri nedeniyle grubunuza katılamadı! Kullanıcının grupta yasaklı olmadığından emin olun."
-            "\n\nVeya grubunuza el ile EfsaneStarMusic ekleyin ve yeniden deneyin</b>",
+            "\n\nVeya grubunuza el ile @SesmusicAsistan ekleyin ve yeniden deneyin</b>",
         )
         return
     await message.reply_text(
-            "<b>Adayanıklı userbot sohbetinize katıldı</b>",
+            "<b>Userbot sohbetinize katıldı 😎</b>",
         )
     
-@USER.on_message(filters.group & filters.command(["userbotayril"]))
+@USER.on_message(filters.group & filters.command(["ayril"]))
 async def rem(USER, message):
     try:
         await USER.leave_chat(message.chat.id)
     except:  
         await message.reply_text(
             f"<b>Kullanıcı grubunuzdan ayrılamadı! Floodwaits olabilir."
-            "\n\nYa da beni manuel olarak grubunuza Al veya kovmalısın.</b>",
+            "\n\nYa da beni manuel olarak grubunuza Al veya kov 🤣.</b>",
         )
         return
  
