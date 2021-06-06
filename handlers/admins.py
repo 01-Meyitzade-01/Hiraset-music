@@ -9,10 +9,10 @@ from helpers.filters import command, other_filters
 from helpers.decorators import errors, authorized_users_only
 
 
-@Client.on_message(command("pause") & other_filters)
+@Client.on_message(command("durdur") & other_filters)
 @errors
 @authorized_users_only
-async def pause(_, message: Message):
+async def durdur(_, message: Message):
     if (
             message.chat.id not in callsmusic.pytgcalls.active_calls
     ) or (
@@ -21,13 +21,13 @@ async def pause(_, message: Message):
         await message.reply_text("❗ Duraklatıldı. Efendim.!")
     else:
         callsmusic.pytgcalls.pause_stream(message.chat.id)
-        await message.reply_text("▶️ Paused!")
+        await message.reply_text("▶️ parçayı geçmek için /atla!")
 
 
-@Client.on_message(command("resume") & other_filters)
+@Client.on_message(command("devam") & other_filters)
 @errors
 @authorized_users_only
-async def resume(_, message: Message):
+async def devam(_, message: Message):
     if (
             message.chat.id not in callsmusic.pytgcalls.active_calls
     ) or (
@@ -36,10 +36,10 @@ async def resume(_, message: Message):
         await message.reply_text("❗ Parça geçildi. Efendim!")
     else:
         callsmusic.pytgcalls.resume_stream(message.chat.id)
-        await message.reply_text("⏸ Resumed!")
+        await message.reply_text("⏸ parçayı durdurmak için /durdur!")
 
 
-@Client.on_message(command("end") & other_filters)
+@Client.on_message(command("bitir") & other_filters)
 @errors
 @authorized_users_only
 async def stop(_, message: Message):
@@ -55,12 +55,12 @@ async def stop(_, message: Message):
         await message.reply_text("❌ Müzik akışı durdu ve Sona erdi!")
 
 
-@Client.on_message(command("skip") & other_filters)
+@Client.on_message(command("atla") & other_filters)
 @errors
 @authorized_users_only
-async def skip(_, message: Message):
+async def atla(_, message: Message):
     if message.chat.id not in callsmusic.pytgcalls.active_calls:
-        await message.reply_text("❗ Parçanın geçilmesi lazım!")
+        await message.reply_text("❗ Parçanın geçilmesi lazım! 🤔")
     else:
         callsmusic.queues.task_done(message.chat.id)
 
