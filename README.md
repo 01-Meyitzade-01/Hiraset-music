@@ -15,16 +15,17 @@
 
 ### Komutlar 🛠
 #### Gruptaki herkes için 
-- `/play` - şarkı çalmak için youtube url'sine veya şarkı dosyasına yanıt verme 
-- `/play <Müzik ismi>` - istediğiniz şarkıyı çal 
-- `/song <Müzik ismi>` - istediğiniz şarkıları hızlı bir şekilde indirin 
-- `/search <sorgu>` - youtube'da ayrıntıları içeren videoları arama 
+- `/oynat` - şarkı çalmak için youtube url'sine veya şarkı dosyasına yanıt verme 
+- `/ytindir` <Müzik ismi>` - istediğiniz şarkıları hızlı bir şekilde indirin 
+- `/ara <sorgu>` - youtube'da ayrıntıları içeren videoları arama 
 
 #### Yalnızca yöneticiler 
-- `/pause` - Müzik duraklar kısa süreliğine.
-- `/resume` - Müzik Akışı devam eder. 
-- `/skip` - Müzik atlatılır. 
-- `/end` - Müzik akışı kapanır. 
+- `/durdur` - Müzik duraklar kısa süreliğine.
+- `/devam` - Müzik Akışı devam eder. 
+- `/atla` - Müzik atlatılır. 
+- `/bitir` - Müzik akışı kapanır. 
+- `/katil` - Userbot grup a katılır. 
+- `/ayril` - Userbot gruptan ayrılır. 
 
 ### Heroku'ya Dağıt</h4>
 
