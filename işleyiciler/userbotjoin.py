@@ -20,14 +20,14 @@ async def addchannel(client, message):
     try:
         user = await USER.get_me()
     except:
-        user.first_name =  "SesmusicAsistan" 
+        user.first_name =  "HirasetAsistan" 
 
     try:
         await USER.join_chat(invitelink)
         await USER.send_message(message.chat.id,"I joined here as you requested")
     except UserAlreadyParticipant:
         await message.reply_text(
-            "<b>Asistanınız zaten sohbetinizde Efendim</b>",
+            "<b>Asistanınız zaten sohbetinizde</b>",
         )
         pass
     except Exception as e:
@@ -38,7 +38,7 @@ async def addchannel(client, message):
         )
         return
     await message.reply_text(
-            "<b>Userbot sohbetinize katıldı 😎</b>",
+            "<b>asistan sohbetinize katıldı 😎</b>",
         )
     
 @USER.on_message(filters.group & filters.command(["ayril"]))
