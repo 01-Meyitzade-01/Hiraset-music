@@ -3,7 +3,7 @@
 ### Telegram grubunun sesli aramasinde müzik çalabilen bir bot Sorunlar en aza indirildi. 
 
 <p align="center">
-<img src="https://i.ibb.co/syVTfWb/6d58817f09e15d326fa1807f2a57587c.jpg" alt="6d58817f09e15d326fa1807f2a57587c" border="0"> 
+
   
 </p>
 
@@ -38,8 +38,8 @@
 
 ## Uygulamaya Katkı Yapan ⬇️
 
-- 👨‍💻 [Mehmetbaba](https://t.me/EfsaneStar) 🇹🇷
-- 👨‍💻 [Desvelad Mehmet](https://t.me/mehmett_12) 🇹🇷
+- 👨‍💻 [01-Meyitzade-01](https://t.me/pumaefe) 🇹🇷
+- 👨‍💻 [Destek grup](https://t.me/hirasetsohbet) 🇹🇷
 
 
 
