@@ -2,7 +2,7 @@
   "name": "Music Bot",
   "description": "Open-Source bot to play songs in your Telegram's Group Voice Chat. Powered by PyTgCalls.",
   "keywords": ["music", "voicechat", "telegram"],
-  "repository": "https://github.com/Mehmetbaba06/Efsane_Music",
+  "repository": "https://github.com/01-Meyitzade-01/hiraset-music",
   "stack": "container",
   "env": {
     "SESSION_NAME": {
@@ -16,7 +16,7 @@
     "BOT_NAME": {
       "description": "MusicPlayer Bot Adınız.",
       "required": false,
-      "value": "🤖 Group Music Bot"
+      "value": "hiraset müzik"
     },
     "API_ID": {
       "description": "App ID from my.telegram.org/apps",
@@ -33,7 +33,7 @@
     "DURATION_LIMIT": {
       "description": "İndirmeler için en fazla ses süresi sınırı(minutes).",
       "required": true,
-      "value": "35"
+      "value": "45"
     }
   }
 }
