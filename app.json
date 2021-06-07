@@ -1,5 +1,5 @@
 {
-  "name": "Music Bot",
+  "name": "Hiraset Music Bot",
   "description": "Open-Source bot to play songs in your Telegram's Group Voice Chat. Powered by PyTgCalls.",
   "keywords": ["music", "voicechat", "telegram"],
   "repository": "https://github.com/01-Meyitzade-01/hiraset-music",
