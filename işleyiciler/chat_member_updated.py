@@ -1,4 +1,4 @@
-# Owner Mehmetbaba06 - @EfsaneStar Kim yazdı O kadar olsun düzenliyoruz. 
+# Owner 01-Meyitzade-01- @pumaefe sıfırdan düzenleyenlere teşekkürler,bizde boş durmadık. 
 from pyrogram import Client
 from pyrogram.types import ChatMemberUpdated
 
