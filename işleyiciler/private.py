@@ -9,25 +9,24 @@ from helpers.filters import other_filters2
 async def start(_, message: Message):
     await message.reply_text(
         f"""**Merhaba, Ben {bn} 🎵
-Göründügü gibi müzik uygulaması yapıyoruz sizler için en iyisini tasarladık. Ben [Mehmet Bey](https://t.me/EfsaneStar).
-Ve bu uygulamada emeği geçen arkadaşım [RGMehmet](https://t.me/mehmett_12) Kendisine teşekkürler ederim.👍
+Göründügü gibi müzik uygulaması yapıyoruz sizler için en iyisini tasarladım. Ben [01-Meyitzade-01](https://t.me/pumaefe)
 Bu uygulamayı grubunuza ekleyin ve özgürce müzik çalın!**
         """,
         reply_markup=InlineKeyboardMarkup(
             [
                 [
                     InlineKeyboardButton(
-                        " Katkıda bulunan 👨‍💻", url="https://t.me/Mehmett_12")
+                        " Katkıda bulunan 👨‍💻", url="https://t.me/pumaefe")
                   ],[
                     InlineKeyboardButton(
-                        " Sohbet Group 💬", url="https://t.me/sohbetskyfall"
+                        " Sohbet Group 💬", url="https://t.me/hirasetsohbet"
                     ),
                     InlineKeyboardButton(
-                        " Uygulama sahibi 👨‍💻", url="https://t.me/EfsaneStar"
+                        " Uygulama sahibi 👨‍💻", url="https://t.me/pumaefe"
                     )
                 ],[ 
                     InlineKeyboardButton(
-                        " Support group 🎛️", url="https://t.me/RgBotSupport"
+                        " Support group 🎛️", url="https://t.me/hirasetsohbet"
                     )]
             ]
         ),
@@ -36,12 +35,12 @@ Bu uygulamayı grubunuza ekleyin ve özgürce müzik çalın!**
 
 @Client.on_message(filters.command("start") & ~filters.private & ~filters.channel)
 async def gstart(_, message: Message):
-      await message.reply_text("""**Group Music Player Online ✅**""",
+      await message.reply_text("""**hiraset music Online ✅**""",
       reply_markup=InlineKeyboardMarkup(
             [
                 [
                     InlineKeyboardButton(
-                        "🔊 Channel", url="https://t.me/sohbetlobisi")
+                        "🔊 Channel", url="https://t.me/hiraseticraat")
                 ]
             ]
         )
