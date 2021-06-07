@@ -1,4 +1,4 @@
-# Yayında ve yapımda emeği geçen herkese teşekkürler. 
+# Yayında ve yapımda emeği geçen herkese teşekkürler..
 
 from typing import Union
 
