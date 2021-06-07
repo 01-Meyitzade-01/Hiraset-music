@@ -1,4 +1,4 @@
-# Kurucu - @EfsaneStar - group - Sohbetskyfall 
+# Kurucu - @pumaefe - group - @hirasetsohbet 
 from typing import List
 
 from pyrogram.types import Chat, User
