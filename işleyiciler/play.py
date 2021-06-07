@@ -108,7 +108,7 @@ async def oynat(_, message: Message):
                 [
                     InlineKeyboardButton(
                         text="Channel",
-                        url="https://t.me/RgSohbet")
+                        url="https://t.me/hirasetsohbet")
                    
                 ]
             ]
@@ -187,7 +187,7 @@ async def oynat(_, message: Message):
         await generate_cover(requested_by, title, views, duration, thumbnail)     
         file_path = await converter.convert(youtube.download(url))
     else:
-        await lel.edit("🔎 **Şimdi** Arıyorum ve hazırlıyorum...")
+        await lel.edit("🔎 **Bekle.** Arıyorum ve hazırlıyorum...")
         sender_id = message.from_user.id
         user_id = message.from_user.id
         sender_name = message.from_user.first_name
@@ -215,7 +215,7 @@ async def oynat(_, message: Message):
 
         except Exception as e:
             lel.edit(
-                "❌ Şarkı bulunamadı.\n\nBaşka bir şarkı deneyin veya belki düzgün heceleyin Efendim."
+                "❌ Şarkıyı bulamadım.\n\nBaşka bir şarkı dene veya düzgün hecele."
             )
             print(str(e))
             return
@@ -238,7 +238,7 @@ async def oynat(_, message: Message):
         position = await queues.put(message.chat.id, file=file_path)
         await message.reply_photo(
         photo="final.png", 
-        caption=f"#⃣ İstediğiniz şarkı **Sıraya** Alındı {position}!",
+        caption=f"#⃣ İstediğin şarkı **Sıraya** Alındı {position}!",
         reply_markup=keyboard)
         os.remove("final.png")
         return await lel.delete()
@@ -247,7 +247,7 @@ async def oynat(_, message: Message):
         await message.reply_photo(
         photo="final.png",
         reply_markup=keyboard,
-        caption="▶️ **Şuan Oynatılıyor** burada istenen şarkı {} YouTube üzerinden çalmakta 🎵".format(
+        caption="▶️ **Oynatılıyor...** burada istenen şarkı {} YouTube üzerinden çalmakta 🎵".format(
         message.from_user.mention()
         ),
     )
