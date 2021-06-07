@@ -1,4 +1,4 @@
-# Bu repo @EfsaneStar a aittir. Yardım amaçlı tgden bilgi alabilirim. 
+# Bu repo @pumaefe ye aittir. Yardım amaçlı tgden bilgi alabilirsiniz 
 from os import path
 
 from youtube_dl import YoutubeDL
