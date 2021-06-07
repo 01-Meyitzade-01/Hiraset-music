@@ -1,4 +1,4 @@
-# Owner 01-Meyitzade-01- @pumaefe sıfırdan düzenleyenlere teşekkürler,bizde boş durmadık. 
+# Owner 01-Meyitzade-01- @pumaefe  teşekkürler,bizde boş durmadık. 
 from pyrogram import Client
 from pyrogram.types import ChatMemberUpdated
 
