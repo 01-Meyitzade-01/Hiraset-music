@@ -1,4 +1,4 @@
-# Vallahi müzik botu kolayıma geliyor Userbot yapımına geçiyoruz.
+#  Userbot yapımına geçiyoruz.
  
 from typing import Callable
 
