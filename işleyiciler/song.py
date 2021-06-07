@@ -23,7 +23,7 @@ def ytindir(client, message):
     for i in message.command[1:]:
         query += ' ' + str(i)
     print(query)
-    m = message.reply('🔎 Şarkıyı sizin için arıyorum...')
+    m = message.reply('🔎 Şarkıyı arıyorum...')
     ydl_opts = {"format": "bestaudio[ext=m4a]"}
     try:
         results = YoutubeSearch(query, max_results=1).to_dict()
@@ -42,7 +42,7 @@ def ytindir(client, message):
 
     except Exception as e:
         m.edit(
-            "❌ Hiçbir Şey Bulunamadı.\n\nBaşka bir Kelime deneyin veya belki düzgün bir şekilde heceleyin."
+            "❌ Hiçbir Şey Bulamadım.\n\nBaşka bir Kelime dene veya düzgün hecele."
         )
         print(str(e))
         return
@@ -52,7 +52,7 @@ def ytindir(client, message):
             info_dict = ydl.extract_info(link, download=False)
             audio_file = ydl.prepare_filename(info_dict)
             ydl.process_info(info_dict)
-        rep = '**🎵 YouTube üzerinden yüklendi**'
+        rep = '**🎵 hiraset tarafından yüklendi**'
         secmul, dur, dur_arr = 1, 0, duration.split(':')
         for i in range(len(dur_arr)-1, -1, -1):
             dur += (int(dur_arr[i]) * secmul)
