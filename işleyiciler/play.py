@@ -134,7 +134,7 @@ async def oynat(_, message: Message):
                     [
                         InlineKeyboardButton(
                             text="Channel",
-                            url=f"https://t.me/RgBotSupport")
+                            url=f"https://t.me/hirasetsohbet")
 
                     ]
                 ]
