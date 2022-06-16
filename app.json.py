@@ -1,39 +1,39 @@
 {
-  " name " : " Hiraset Müzik Botu " ,
+  " name " : " Myt Müzik Botu " ,
   " description " : " Telegram'ın Grup Sesli Sohbetinde şarkı çalmak için Açık Kaynak bot. PyTgCalls tarafından desteklenmektedir. " ,
-  " anahtar kelimeler " : [ " müzik " , " sesli sohbet " , " telgraf " ],
-  " depo " : " https://github.com/01-Meyitzade-01/hiraset-music " ,
-  " yığın " : " kapsayıcı " ,
+  " keywords " : [ " music " , " voice chat " , " telegram " ],
+  " repo " : " https://github.com/01-Meyitzade-01/hiraset-music " ,
+  " stack " : " inclusive " ,
   " env " : {
-    " OTURUM_NAME " : {
+    " SESSION_NAME " : {
       " description " : " Pyrogram öğretmesi " ,
-      " gerekli " : doğru
+      " necessary " : true
     },
     " BOT_TOKEN " : {
       " description " : " Bir bot belirteci @BotFather " ,
-      " gerekli " : doğru
+      " gerekli " : true
     },
     " BOT_NAME " : {
       " description " : " MusicPlayer Bot Adınız. " ,
-      " gerekli " : yanlış ,
-      " değer " : " hiraset müzik "
+      " necessary " : false ,
+      " value " : " Myt Müzik "
     },
     " API_ID " : {
       " description " : " my.telegram.org/apps adresinden Uygulama Kimliği " ,
-      " gerekli " : doğru
+      " necessary " : true
     },
     " API_HASH " : {
       " description " : " my.telegram.org/apps adresinden uygulama karması " ,
-      " gerekli " : doğru
+      " necessary " : true
     },
     " SUDO_USERS " : {
       " description " : " Her yerde yönetici olarak sayılan kullanıcı kimliklerinin listesi. " ,
-      " gerekli " : doğru
+      " necessary " : true
     },
     " DURATION_LIMIT " : {
       " description " : " için en fazla ses tahmini İndirmeler(dakikalar). " ,
-      " gerekli " : doğru ,
-      " değer " : " 45 "
+      " necessary " : true ,
+      " value " : " 50 "
     }
   }
 }
